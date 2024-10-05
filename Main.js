@@ -42,5 +42,14 @@ headerLocation.addEventListener('click', () => {
 	}
 })
 
+const burger = document.querySelector('#burger')
+const burgerMenu = document.querySelector('#burger-menu')
 
-
+burger.addEventListener('click', () => {
+	if (burgerMenu.classList.contains('display') == true ) {
+		burgerMenu.classList.remove('display')
+	}
+	else {
+		burgerMenu.classList.add('display')
+	}
+})
