@@ -664,7 +664,7 @@ input:focus {
 .reviews-container {
   max-width: 900px;
   margin: 0 auto;
-
+  padding-inline: 15px;
 }
 .reviews {
   display: flex;
@@ -977,6 +977,7 @@ em {
 }
 .strings {
   display: none;
+  margin-left: 10px;
 }
 
 .footer {
@@ -1144,7 +1145,7 @@ em {
   top: 50%;
   transform: translateY(-50%);
   }
-  .header-button,.group-item1,.header-language,.header-menu-list,.header-location,.header-currency{
+  .header-button,.group-item1,.header-language,.header-menu-list,.header-location,.header-currency,.header-person-image{
     display: none;
   }
   .strings {
