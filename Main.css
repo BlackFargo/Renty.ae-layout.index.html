@@ -280,6 +280,20 @@ a {
   font-weight: 500;
   line-height: 2;
 }
+#burger-menu {
+   position: absolute;
+  top: 55px;
+  left: 12px;
+  font-size: 0.875rem;
+  color: white;
+  cursor: pointer;
+  line-height: 2;
+}
+
+#burger-menu a {
+    font-weight: 500;
+}
+
 #currency-menu {
    position: absolute;
   top: 40px;
@@ -314,7 +328,9 @@ a {
    line-height: 2;
 }
 
-#language-menu > li:hover,#currency-menu > li:hover,#forms a:hover,#location-list > li:hover {
+
+
+#language-menu > li:hover,#currency-menu > li:hover,#forms a:hover,#location-list > li:hover,#burger-menu > a:hover {
   color: lightgray;
   transition-duration: 0.2s;
 }
@@ -659,6 +675,7 @@ input:focus {
 
 .Reviews-partners {
   margin-top: 100px;
+
 }
 
 .reviews-container {
