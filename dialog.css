@@ -1,0 +1,150 @@
+body {
+  scrollbar-gutter: stable;
+}
+
+dialog {
+	width: 600px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	border-radius: 15px;
+	padding: 15px;
+	border: none;
+}
+
+dialog .btn:hover {
+	filter: brightness(1.1);
+}
+
+dialog img:hover {
+	transform: scale(1.05) !important;
+	cursor: zoom-in;
+}
+dialog img {
+		margin-block: 10px;
+}
+
+
+.dialog__container {
+	padding: 10px;
+}
+
+.scroll-block {
+  overflow: hidden;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.dialog__container-title {
+	margin-top: -15px;
+	padding-bottom: 5px;
+}
+
+.dialog__list-item:nth-child(2) {
+	font-weight: 300;
+}
+
+.dialog__list-item {
+	line-height: 1.8;
+}
+
+.dialog__actions {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.btn {
+	width: auto;
+	height: 40px;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.btn:first-child {
+	margin-top: 10px;
+}
+
+dialog img {
+	border: 1px solid black;
+}
+
+.btn:focus {
+	border: none;
+	outline: none;
+}
+
+.dialog__container-contact-button {
+	text-transform: uppercase;
+	background-color: rgb(14, 165, 72);
+}
+.dialog__actions a:first-child{
+	color: white !important;
+}
+
+.dialog__container-offer-button {
+	 	 transition: all 0.3s ease;
+		 	border-bottom: 1px solid transparent;
+}
+
+.dialog__container-offer-button:hover {
+	border-bottom: 1px solid black;
+}
+
+.price::before {
+	  content: '';
+  background: url(images/icons/price-tag.png) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+	margin-bottom: 3px;
+}
+
+
+
+.right-arrow::before {
+	  content: '';
+  background: url(images/icons/down-arrow.png) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.calendar::before {
+	  content: '';
+  background: url(images/icons/calendar.png) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+	margin-bottom: 3px;
+  margin-right: 5px;
+}
+.info::before {
+	  content: '';
+  background: url(images/icons/info.png) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
