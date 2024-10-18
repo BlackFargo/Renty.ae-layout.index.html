@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(dialog.css);
+
+
+
 
 *:not(i) {
   font-family: "Montserrat", sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,7 +17,6 @@ body {
   font-size: 1rem;
   overflow-x: hidden;
 }
-
 
 :root {
   --main-color: rgb(19, 89, 186);
@@ -87,7 +94,7 @@ a {
   border-radius: 5px;
   color: white;
   font-size: 1rem;
-
+  transition: all 0.3s;
 }
 .header-button:hover {
  filter: brightness(1.1);
@@ -135,23 +142,12 @@ a {
   padding: 10px;
 }
 
-
-
-.search-location {
-   position: absolute;
-  top: 2px;
-  right: -5px;
-  color: white;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
-  color: black;
-  padding: 10px;
-
+a {
+  transition: all 0.3s;
 }
 
-.header-location-icon,.search-location-icon  {
+
+.header-location-icon {
   border-radius: 50%;
 }
 .flag  {
@@ -227,6 +223,10 @@ a {
    color: black;
    font-weight: 500;
 }
+
+.yacht-offer img {
+  cursor: pointer;
+}
 .header-menu-service-subtitle li a:hover,.header-menu-buggy-subtitle li a:hover
 ,.header-menu-Yachts-subtitle li a:hover {
   color: rgb(103, 103, 235);
@@ -262,8 +262,9 @@ a {
   column-gap: 5px;
   cursor: pointer;
 }
-.header-location,.search-location,.car-block {
+.header-location,.car-block {
   cursor: pointer;
+   transition: all 0.3s;
 }
 
 .group {
@@ -417,7 +418,7 @@ a {
   border-radius: 7%;
   border: none;
   background-color: rgb(0, 159, 226);
- 
+  transition: all 0.3s;
 }
 
 .search-button a {
@@ -456,6 +457,7 @@ input:focus {
   width: 149px;
   height: 45px;
   position: relative;
+  transition: all 0.3s;
 }
 
 .function-button a {
@@ -613,7 +615,7 @@ input:focus {
 }
 
 .Offers {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .Offers a,.big-list a  {
@@ -640,6 +642,13 @@ input:focus {
   justify-content: space-between;
 }
 
+.car-offer-title {
+  font-weight: 500;
+}
+
+.car-offer img:first-child {
+  cursor: pointer;
+}
 
 
 .car-offers {
@@ -647,8 +656,8 @@ input:focus {
   display: flex;
   column-gap: 8px;
   padding: 0;
-  
 }
+
 .yachts-offers {
   display: flex;
   column-gap: 8px;
@@ -659,23 +668,33 @@ input:focus {
   margin-top: 40px;
 }
 
+.car-offer,.yacht-offer {
+  overflow: hidden;
+}
 
-
+.car__offer-image,.yacht__offer-image,.partners__image{
+  overflow: hidden;
+   border-radius: 10%;
+}
 
 .car-offer img,.yacht-offer img {
   border-radius: 10%;
   width: 100%;
   height: auto;
-
+     vertical-align: top; /* Устанавливаем выравнивание по верхнему краю */
+}
+.partners-list-item img {
+  border-radius: 10%;
+  vertical-align: top;
 }
 
 .car-offer img:hover,.yacht-offer img:hover,.partners-list-item img:hover,.hourly-list-item img:hover {
   transition: all 0.3s ease;
- transform:scale(1.03);
+ transform:scale(1.05);
 }
 
 .Reviews-partners {
-  margin-top: 100px;
+  margin-top: 80px;
 
 }
 
@@ -780,10 +799,44 @@ input:focus {
   height: auto;
   
 }
+.slider {
+  width: 100%;
+  position: relative;
+  margin-inline: auto;
+  margin-block: 30px;
+   padding-top: 56.25%; /* Это соотношение 16:9, можно настроить под нужное */
 
-.mask-image {
-   mask-image: linear-gradient(to right, black, transparent);
-            -webkit-mask-image: linear-gradient(to right, black, transparent);
+}
+.slider-img {
+  width: 100%;
+  height: 100%;
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 20px;
+}
+.slider-img.active {
+  opacity: 1;
+}
+.controlls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider .prev {
+  max-width: 64px;
+   height: 64px;
+  left: 10px;
+}
+.slider .next {
+  max-width: 64px;
+  max-height: 64px;
+  right: 10px;
 }
 
 .hourly-list-item p {
@@ -797,44 +850,12 @@ input:focus {
   font-weight: 400;
 }
 
-.click-left,.click-right {
-  width: 35px;
-  height: 35px;
-  background-color: var(--main-color);
-  position: absolute;
-  border-radius: 10%;
-  cursor: pointer;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.click-left {
-  top: 30%;
-  left: -20px;
-  transform: translateY(-30%);
-}
-
-.click-right {
-   top: 30%;
-  right: -20px;
-    transform: translateY(-30%);
-}
-
 .extra-wrapper {
   max-width: 1500px;
    min-width: 320px;
   margin-left: 440px;
   padding: 0px 15px;
 }
-
-
-
-.car-reviews {
-   margin-top: 60px;
-}
-
 
 .car-review-image {
   margin-top: 30px;
@@ -1236,16 +1257,6 @@ em {
 .partners-title {
   margin-inline: 10px;
 }
-.click-left {
-  top: 25%;
-  left: -20px;
-  transform: translateY(-25%);
-}
-.click-right {
-  top: 25%;
-  right:  -20px;
-  transform: translateY(-25%);
-}
 .footer__body {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -1257,6 +1268,16 @@ em {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
+.slider .prev {
+  max-width: 48px;
+   height: 48px;
+
+}
+.slider .next {
+  max-width: 48px;
+  max-height: 48px;
+}
+
 }
 
 
@@ -1275,9 +1296,6 @@ em {
   display: grid;
   grid-template-columns: 1fr 1fr; 
 }
-.click-left,.click-right  {
-  display: none;
-}
 .function-section {
     flex-wrap: wrap;
     row-gap: 10px;
@@ -1286,17 +1304,19 @@ em {
     flex-wrap: wrap;
     row-gap: 50px;
   }
+  .slider .prev {
+  max-width: 36px;
+   height: 36px;
 
-.mask-image {
-    mask-image: none;
-            -webkit-mask-image: none;
+}
+.slider .next {
+  max-width: 36px;
+  max-height: 36px;
 }
 }
+
 
 @media (max-width: 630px) {
-  .search-location {
-    display: none;
-  }
   .search-input {
     width: 300px;
   }
@@ -1347,7 +1367,6 @@ em {
 
 
 @media (max-width: 475px) {
-
   .rent-actions {
     margin-top: 0px;
   }
@@ -1402,14 +1421,29 @@ em {
   grid-row: 5 / 6;
   text-align: center;
 } 
+  .slider .prev {
+  max-width: 24px;
+   height: 24px;
+    left: 3px;
+}
+.slider .next {
+  max-width: 24px;
+  max-height: 24px;
+   right: 3px;
+}
 }
 @media (max-width: 410px) {
   .search-input,.search-button {
     width: 330px;
   }
+
 }
 
 @media (max-width: 394px) {
+    .rent-title h2{
+    font-size: 32px;
+    margin-top: 30px;
+  }
     .rent {
     padding-top: 110px;
   }
