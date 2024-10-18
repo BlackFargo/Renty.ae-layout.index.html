@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
-  <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent a car Dubai | Car rental Dubai without deposit</title>
     <link rel="stylesheet" href="Reset.css">
   <link rel="stylesheet" href="Main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="icon" href="images/img/Logo.png">
 </head>
-<body>
+<body class="content">
  
    <header class="header wrapper">
-    <img src="images/icons/burger-menu.png" id="burger" class="strings" width="32" height="32">
+    <img src="images/icons/burger-menu.png" id="burger" class="strings" width="32" height="32" alt="menu">
     <div id="burger-menu" class="display">
       <a href="Login.html">Log in</a><br>
       <a href="Signup.html">Sign up</a>
@@ -66,7 +65,7 @@
      
 </ul></li> 
     </ul>
-    <d  iv class="group">
+    <div class="group">
       
      <span id="language" class="header-language"><i class="fa-solid fa-globe"></i>   English     &blacktriangledown;</span>
     <ul id="language-menu" class="display">
@@ -99,8 +98,7 @@
          
          <div class="search-input-group"> <input class="search-input" type="text" placeholder="Search a car by brand or model">
  <button class="search-form-button"><img src="images/icons/magnifying glass.png"></button>
-          <div class="search-location">  <img src="https://renty.ae/assets-nd/icons/flags/1x1/ae.svg" class="search-location-icon"   alt="location-icon" height="12" width="12"> Dubai &blacktriangledown;</div>
-          
+
      </div>
       <button class="search-button"><a href="#">Search</a></button>
           </div>
@@ -113,7 +111,7 @@
           <button class="function-button"><a href="#">Rent a yacht</a></button>
           <button class="function-button"><a href="#">Buggy tours</a></button>
         </div> 
-      </div>
+     
     
     </section>
 
@@ -128,7 +126,7 @@
         <div class="car-block"><img src="https://renty.ae/assets/icons/cars/suv.svg"  alt="SUV">SUV</div>
         <div class="car-block"><img src="https://renty.ae/assets/icons/cars/convertible.svg" width="61" height="31"  alt="Convertible">Convertible</div>
         <div class="car-block"><img src="https://renty.ae/assets-nd/icons/desc-car-types/business.svg" alt="Business">Business</div>
-        <div class="car-block"><img src="https://renty.ae/assets-nd/icons/desc-car-types/electric-ev-cars.svg"alt="Electric (EV)">Electric (EV)</div>
+        <div class="car-block"><img src="https://renty.ae/assets-nd/icons/desc-car-types/electric-ev-cars.svg" alt="Electric (EV)">Electric (EV)</div>
         <div class="car-block"><img src="https://renty.ae/assets/icons/cars/van.svg" alt="VAN">VAN</div>
       </div>
       <div class="categories">
@@ -163,63 +161,82 @@
           </div>
  <div class="car-offers">
   <div class="car-offer">
-    <a href="#">
+   <div class="car__offer-image">
       <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/black_bmw-x_2023_5547_main_3e71d31822dfd959de19fb5fb1cfe2ad.jpg"
-           srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/black_bmw-x_2023_5547_main_3e71d31822dfd959de19fb5fb1cfe2ad.jpg 2x"
            title="Hiring BMW X6 (Blue), 2023 in Dubai"
            alt="BMW X6 (Blue), 2023 for rent in Dubai"
            loading="lazy"
-           width="240" height="180">
+           width="240" height="180" data-car></div>
+           <dialog data-dialog>
+            <div class="dialog__inner" id="dialog__inner">
+    <div class="dialog__container">
+    <h4 class="dialog__container-title">Rent a car</h4>
+      <img src="images/img/image-coming.png" width="240" height="180" alt="coming">
+    <ul class="dialog__container-list">
+       <li class="dialog__list-item price">& EUR</li> 
+      <li class="dialog__list-item calendar">Available soon</li>
+      <li class="dialog__list-item info">No deposit needed</li>
+      <li class="dialog__list-item right-arrow">Mileage limit - 250 km for 1 day</li>
+      <li class="dialog__list-item right-arrow">Free delivery in Dubai</li>
+      <li class="dialog__list-item right-arrow">Cash, Crypto, Credit/debit cards accepted</li>
+    </ul>
+    <div class="dialog__actions">
+    <a href="tel:+123456789" class="dialog__container-contact-button btn">Contact</a>
+    <a href="#hourly-title" class="dialog__container-offer-button btn" data-view-all >View all Special offers</a>
+      </div>
+       <button class="close-modal" data-close>Close</button> 
+      </div>
+           </dialog>
       <div class="car-offer-title">
         <p>Rent BMW X4 (Black)</p>
         <p>€ 125</p>
       </div>
-    </a>
+   
   </div>
   
   <div class="car-offer">
-    <a href="#">
+     <div class="car__offer-image">
       <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/black_bmw-x_2021_5324_main_bba2573810dea8b0defb983554a0cdf4.jpg"
            srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/black_bmw-x_2021_5324_main_bba2573810dea8b0defb983554a0cdf4.jpg 2x"
            title="Hiring BMW X4 (Black), 2021 in Dubai"
            alt="BMW X4 (Black), 2021 for rent in Dubai"
            loading="lazy"
-           width="240" height="180">
+           width="240" height="180" data-car></div>
+         
       <div class="car-offer-title">
         <p>BMW X6 (Blue), 2023</p>
         <p>€ 198</p>
       </div>
-    </a>
   </div>
 
   <div class="car-offer">
-    <a href="#">
+     <div class="car__offer-image">
       <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/grey_range-rover-velar_2020_4260_main_0f0027248806353bab3e5ec55f85e539.jpg"
            srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/grey_range-rover-velar_2020_4260_main_0f0027248806353bab3e5ec55f85e539.jpg 2x"
            title="Hiring Range Rover Velar (Grey), 2020 in Dubai"
            alt="Range Rover Velar (Grey), 2020 for rent in Dubai"
            loading="lazy"
-           width="240" height="180">
+           width="240" height="180" data-car></div>
       <div class="car-offer-title">
+        
         <p>Rent Range Rover Velar (Grey)</p>
         <p>€ 140</p>
       </div>
-    </a>
   </div>
 
   <div class="car-offer">
-    <a href="#">
+     <div class="car__offer-image">
       <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/white_mercedes-g_2021_3965_main_823eb1c03eb0f98e3c2fa98f0ceb8f00.jpg"
            srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_mercedes-g_2021_3965_main_823eb1c03eb0f98e3c2fa98f0ceb8f00.jpg 2x"
            title="Hiring Mercedes G63 AMG (White), 2020 in Dubai"
            alt="Mercedes G63 AMG (White), 2020 for rent in Dubai"
            loading="lazy"
-           width="240" height="180">
+           width="240" height="180" data-car></div>
+           
       <div class="car-offer-title">
         <p>Rent Mercedes G63 AMG (White)</p>
         <p>€ 374</p>
       </div>
-    </a>
   </div>
 </div>
        
@@ -229,22 +246,49 @@
         </div>
         
          <div class="yachts-offers">
-        <div class="yacht-offer"><a href="#"><img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/yacht/photo/m/riva_2023_63_main_282d3d35090a47039e85b0ed60397f69.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.1/https://renty.ae/uploads/yacht/photo/l/riva_2023_63_main_282d3d35090a47039e85b0ed60397f69.jpg 2x"  title="Hiring Riva 66 ft Power boat in Dubai" alt="Riva 66 ft Power boat for rent in Dubai" loading="lazy" alt="yacht" width="330" height="250">
+        <div class="yacht-offer">
+          <div class="yacht__offer-image">
+          <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/yacht/photo/m/riva_2023_63_main_282d3d35090a47039e85b0ed60397f69.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.1/https://renty.ae/uploads/yacht/photo/l/riva_2023_63_main_282d3d35090a47039e85b0ed60397f69.jpg 2x"  title="Hiring Riva 66 ft Power boat in Dubai" alt="Riva 66 ft Power boat for rent in Dubai" loading="lazy" alt="yacht" width="330" height="250" data-yacht></div>
+          <dialog data-dialog>
+            <div class="dialog__inner" id="dialog__inner">
+    <div class="dialog__container">
+    <h4 class="dialog__container-title">Rent a car</h4>
+      <img src="images/img/image-coming.png" width="240" height="180" alt="coming">
+    <ul class="dialog__container-list">
+       <li class="dialog__list-item price">& EUR</li> 
+      <li class="dialog__list-item calendar">Available soon</li>
+      <li class="dialog__list-item info">No deposit needed</li>
+      <li class="dialog__list-item right-arrow">Mileage limit - 500 km for 1 day</li>
+      <li class="dialog__list-item right-arrow">Free delivery in Dubai</li>
+      <li class="dialog__list-item right-arrow">Cash, Crypto, Credit/debit cards accepted</li>
+    </ul>
+    <div class="dialog__actions">
+    <a href="tel:+123456789" class="dialog__container-contact-button btn">Contact</a>
+    <a href="#hourly-title" class="dialog__container-offer-button btn">View all Special offers</a>
+      </div>
+       <button class="close-modal" data-close>Close</button> 
+      </div>
+           </dialog>
           <div class="yacht-offer-title">
             <p>Riva 66 ft Power boat</p>
-            <p>€ 2,177</p></a>
+            <p>€ 2,177</p>
           </div>
           </div>
-          <div class="yacht-offer"><a href="#"><img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/yacht/photo/m/ava_2023_86_main_fa55d64553b2e1ff256ad148710a2e36.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.1/https://renty.ae/uploads/yacht/photo/l/ava_2023_86_main_fa55d64553b2e1ff256ad148710a2e36.jpg 2x"  title="Hiring Sky Walker Ava 52 ft Power boat in Dubai" alt="Sky Walker Ava 52 ft Power boat for rent in Dubai" loading="lazy" alt="yacht" width="330" height="250">
+          <div class="yacht-offer">
+             <div class="yacht__offer-image">
+            <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/yacht/photo/m/ava_2023_86_main_fa55d64553b2e1ff256ad148710a2e36.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.1/https://renty.ae/uploads/yacht/photo/l/ava_2023_86_main_fa55d64553b2e1ff256ad148710a2e36.jpg 2x"  title="Hiring Sky Walker Ava 52 ft Power boat in Dubai" alt="Sky Walker Ava 52 ft Power boat for rent in Dubai" loading="lazy" alt="yacht" width="330" height="250" data-car></div>
+            
           <div class="yacht-offer-title">
             <p>Sky Walker Ava 52 ft Power boat</p>
-            <p>€ 221</p></a>
+            <p>€ 221</p>
           </div>
           </div>
-          <div class="yacht-offer"><a href="#"><img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/yacht/photo/m/azimut-magellano_2022_69_main_abc355ff44b704a25da3be121372bbf4.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.1/https://renty.ae/uploads/yacht/photo/l/azimut-magellano_2022_69_main_abc355ff44b704a25da3be121372bbf4.jpg 2x"  title="Hiring Azimut Magellano 43 ft Power boat in Dubai" alt="Azimut Magellano 43 ft Power boat for rent in Dubai" loading="lazy" alt="yacht" width="330" height="250">
+          <div class="yacht-offer">
+               <div class="yacht__offer-image">
+            <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/yacht/photo/m/azimut-magellano_2022_69_main_abc355ff44b704a25da3be121372bbf4.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.1/https://renty.ae/uploads/yacht/photo/l/azimut-magellano_2022_69_main_abc355ff44b704a25da3be121372bbf4.jpg 2x"  title="Hiring Azimut Magellano 43 ft Power boat in Dubai" alt="Azimut Magellano 43 ft Power boat for rent in Dubai" loading="lazy" alt="yacht" width="330" height="250" data-car></div>
           <div class="yacht-offer-title">
             <p>Azimut Magellano 43 ft Power boat</p>
-            <p>€ 463</p></a>
+            <p>€ 463</p>
           </div>
           </div> 
     </section> 
@@ -268,10 +312,26 @@
             <h4>Official partners with</h4>
           </div>
           <div class="partners-list">
-            <a href="https://www.emirates.com/ua/english/"> <div class="partners-list-item"><img src="https://renty.ae/uploads/banner/partner/ea53b7a523194f35e59035b7d483aa7c.svg"  loading="lazy" alt="Rent a car partner in Dubai" title="Car rental partner in Dubai" width="150" height="80"></div></a>
-         <a href="https://www.forbes.com/"><div class="partners-list-item"><img src="https://renty.ae/uploads/banner/partner/1f5650a5623b640b46ea3d920b876dbe.svg"  alt="Rent a car partner in Dubai" title="Car rental partner in Dubai" width="150" height="80"></div></a>
-         <a href="https://www.skydivedubai.ae/"><div class="partners-list-item"><img src="https://renty.ae/uploads/banner/partner/280f09ef7079783bbf22995a08c539c4.svg"  loading="lazy" alt="Rent a car partner in Dubai" title="Car rental partner in Dubai" width="150" height="80"></div></a>
-           <a href=""><div class="partners-list-item"><img src="https://renty.ae/uploads/banner/partner/eaaa8c5bb090968cb85414f30df0dd39.svg"  loading="lazy" alt="Rent a car partner in Dubai" title="Car rental partner in Dubai" width="150" height="80"></div></a> 
+            <a href="https://www.emirates.com/ua/english/"> <div class="partners-list-item">
+              <div class="partners__image">
+              <img src="https://renty.ae/uploads/banner/partner/ea53b7a523194f35e59035b7d483aa7c.svg"  loading="lazy" alt="Rent a car partner in Dubai" title="Car rental partner in Dubai" width="150" height="80"></div></a>
+              </div>
+
+         <a href="https://www.forbes.com/"><div class="partners-list-item">
+           <div class="partners__image">
+          <img src="https://renty.ae/uploads/banner/partner/1f5650a5623b640b46ea3d920b876dbe.svg"  alt="Rent a car partner in Dubai" title="Car rental partner in Dubai" width="150" height="80"></div></a>
+            </div>  
+
+         <a href="https://www.skydivedubai.ae/"><div class="partners-list-item">
+           <div class="partners__image">
+          <img src="https://renty.ae/uploads/banner/partner/280f09ef7079783bbf22995a08c539c4.svg"  loading="lazy" alt="Rent a car partner in Dubai" title="Car rental partner in Dubai" width="150" height="80"></div></a></div>
+
+
+           <a href=""><div class="partners-list-item">
+              <div class="partners__image">
+            <img src="https://renty.ae/uploads/banner/partner/eaaa8c5bb090968cb85414f30df0dd39.svg"  loading="lazy" alt="Rent a car partner in Dubai" title="Car rental partner in Dubai" width="150" height="80"></div></a> </div>
+
+
           </div>
         </div>
       </div>
@@ -282,8 +342,9 @@
     <h6><a href="#">All sports cars</a></h6>
   </div>
   <div class="car-offers">
+
     <div class="car-offer">
-      <a href="#">
+      <div class="car__offer-image">
         <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/silver-grey_chevrolet-camaro-v-rs_2023_5565_main_15a51e4b988418c01018836a39b706f6.jpg"
              srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/silver-grey_chevrolet-camaro-v-rs_2023_5565_main_15a51e4b988418c01018836a39b706f6.jpg 2x"
              class="cars-slider-image rounded-medium"
@@ -291,15 +352,15 @@
              alt="Chevrolet Camaro for rent in Dubai"
              loading="lazy"
              width="240"
-             height="180">
+             height="180" data-car></div>
+ 
         <div class="car-offer-title">
           <p>Chevrolet Camaro</p>
           <p>From € 142 per day</p>
         </div>
-      </a>
     </div>
     <div class="car-offer">
-      <a href="#">
+       <div class="car__offer-image">
         <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/black_audi-rsq_2023_5187_main_f95c97b415b06f88bcc8dbcd755efffa.jpg"
              srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/black_audi-rsq_2023_5187_main_f95c97b415b06f88bcc8dbcd755efffa.jpg 2x"
              class="cars-slider-image rounded-medium"
@@ -307,15 +368,14 @@
              alt="Audi RSQ3 for rent in Dubai"
              loading="lazy"
              width="240"
-             height="180">
+             height="180" data-car></div>
         <div class="car-offer-title">
           <p>Audi RSQ3</p>
           <p>From € 194 per day</p>
         </div>
-      </a>
     </div>
     <div class="car-offer">
-      <a href="#">
+       <div class="car__offer-image">
         <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg"
              srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg 2x"
              class="cars-slider-image rounded-medium"
@@ -323,15 +383,14 @@
              alt="Mercedes SL63 AMG for rent in Dubai"
              loading="lazy"
              width="240"
-             height="180">
-        <div class="car-offer-title">
+             height="180" data-car></div>
+        <div class="car-offer-title" >
           <p>Mercedes SL63 AMG</p>
           <p>From € 592 per day</p>
         </div>
-      </a>
     </div>
     <div class="car-offer">
-      <a href="#">
+      <div class="car__offer-image">
         <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/grey_maserati-levante_2020_5326_main_3504417ca4d77963136f7c033bf24b39.jpg"
              srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/grey_maserati-levante_2020_5326_main_3504417ca4d77963136f7c033bf24b39.jpg 2x"
              class="cars-slider-image rounded-medium"
@@ -339,12 +398,11 @@
              alt="Maserati Levante for rent in Dubai"
              loading="lazy"
              width="240"
-             height="180">
+             height="180" data-car></div>
         <div class="car-offer-title">
           <p>Maserati Levante</p>
           <p>From € 627 per day</p>
         </div>
-      </a>
     </div>
   </div>
 
@@ -354,7 +412,7 @@
   </div>
   <div class="car-offers">
     <div class="car-offer">
-      <a href="#">
+      <div class="car__offer-image">
         <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/pearl-white_nissan-xtrail_2024_5608_main_ac51f0a115d5a469a0a53ad4d6043407.jpg"
              srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/pearl-white_nissan-xtrail_2024_5608_main_ac51f0a115d5a469a0a53ad4d6043407.jpg 2x"
              class="cars-slider-image rounded-medium"
@@ -362,15 +420,14 @@
              alt="Nissan Xtrail for rent in Dubai"
              loading="lazy"
              width="240"
-             height="180">
+             height="180"  data-car></div>
         <div class="car-offer-title">
           <p>Nissan Xtrail</p>
           <p>From € 76 per day</p>
         </div>
-      </a>
     </div>
     <div class="car-offer">
-      <a href="#">
+      <div class="car__offer-image">
         <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/black_gmc-yukon_2024_5550_main_75fd873fcd1f7eb7228f67234b9d4bfe.jpg"
              srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/black_gmc-yukon_2024_5550_main_75fd873fcd1f7eb7228f67234b9d4bfe.jpg 2x"
              class="cars-slider-image rounded-medium"
@@ -378,15 +435,15 @@
              alt="GMC Yukon for rent in Dubai"
              loading="lazy"
              width="240"
-             height="180">
-        <div class="car-offer-title">
+             height="180" data-car></div>
+        <div class="car-offer-title" >
           <p>GMC Yukon</p>
           <p>From € 139 per day</p>
         </div>
-      </a>
+
     </div>
     <div class="car-offer">
-      <a href="#">
+  <div class="car__offer-image">
         <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/black_bentley-bentayga_2022_5216_main_7ade7f6e0e759ae04f18fbd389044e2a.jpg"
              srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/black_bentley-bentayga_2022_5216_main_7ade7f6e0e759ae04f18fbd389044e2a.jpg 2x"
              class="cars-slider-image rounded-medium"
@@ -394,30 +451,74 @@
              alt="Bentley Bentayga for rent in Dubai"
              loading="lazy"
              width="240"
-             height="180">
+             height="180" data-car></div>
         <div class="car-offer-title">
           <p>Bentley Bentayga</p>
           <p>From € 955 per day</p>
         </div>
-      </a>
+
     </div>
     <div class="car-offer">
-      <a href="#">
+      <div class="car__offer-image">
         <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/blue_mercedes-v_2019_4815_main_107d3cab2e21fdf17754edf71ba653b7.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/blue_mercedes-v_2019_4815_main_107d3cab2e21fdf17754edf71ba653b7.jpg 2x" class="cars-slider-image rounded-medium" title="Hiring Mercedes V Class in Dubai" alt="Mercedes V Class for rent in Dubai" loading="lazy"
              width="240"
-             height="180">
+             height="180" data-car></div>
         <div class="car-offer-title">
           <p>Mercedes V Class</p>
           <p>From € 167 per day</p>
         </div>
-      </a>
+
     </div>
   </div>
+   <div class="car-offers-title">
+            <h4>Experience the luxury style of Dubai</h4>
+        <h6><a href="#">All Luxury cars</a></h6>
+          </div>
+ <div class="car-offers">
+  <div class="car-offer">
+   <div class="car__offer-image">
+     <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/bronze_toyota-land-cruiser_2022_4763_main_f05b8f77a38394686d683abf8c80e0c0.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/bronze_toyota-land-cruiser_2022_4763_main_f05b8f77a38394686d683abf8c80e0c0.jpg 2x" class="cars-slider-image rounded-medium" title="Hiring Toyota Land Cruiser in Dubai" alt="Toyota Land Cruiser for rent in Dubai" loading="lazy" width="240" height="180" data-car></div>
+      <div class="car-offer-title">
+        <p>Toyota Land Cruiser</p>
+        <p>From € 157per day</p>
+      </div>
+  </div>
+  
+  <div class="car-offer">
+     <div class="car__offer-image">
+     <img srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_audi-rs_2022_5104_main_3a6a4280852dd0c64c7a37b9b8739959.jpg 2x" class="cars-slider-image rounded-medium" title="Hiring Audi RS6 in Dubai" alt="Audi RS6 for rent in Dubai" loading="lazy" data-cfsrc="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/white_audi-rs_2022_5104_main_3a6a4280852dd0c64c7a37b9b8739959.jpg" src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/white_audi-rs_2022_5104_main_3a6a4280852dd0c64c7a37b9b8739959.jpg"  width="240" height="180" data-car></div>
+         
+      <div class="car-offer-title">
+        <p>Audi RS6 </p>
+        <p>From € 331per day</p>
+      </div>
+  </div>
+
+  <div class="car-offer">
+     <div class="car__offer-image">
+      <img srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/grey_rolls-royce-cullinan-black-badge-mansory_2022_4986_main_9e8968d5e882b2d0c888fb4fb74322a9.jpg 2x" class="cars-slider-image rounded-medium" title="Hiring Rolls Royce Cullinan Black Badge in Dubai" alt="Rolls Royce Cullinan Black Badge for rent in Dubai" loading="lazy" data-cfsrc="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/grey_rolls-royce-cullinan-black-badge-mansory_2022_4986_main_9e8968d5e882b2d0c888fb4fb74322a9.jpg" src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/grey_rolls-royce-cullinan-black-badge-mansory_2022_4986_main_9e8968d5e882b2d0c888fb4fb74322a9.jpg" width="240" height="180" data-car></div>
+      <div class="car-offer-title">
+        
+        <p>Rolls Royce Cullinan Black Badge</p>
+        <p>From € 828per day</p>
+      </div>
+  </div>
+
+  <div class="car-offer">
+     <div class="car__offer-image">
+     <img srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/black_cadillac-escalade_2021_3758_main_cfd3a6fa0745443e1e3b94a2d03fcbc9.jpg 2x" class="cars-slider-image rounded-medium" title="Hiring Cadillac Escalade in Dubai" alt="Cadillac Escalade for rent in Dubai" loading="lazy" data-cfsrc="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/black_cadillac-escalade_2021_3758_main_cfd3a6fa0745443e1e3b94a2d03fcbc9.jpg" src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/black_cadillac-escalade_2021_3758_main_cfd3a6fa0745443e1e3b94a2d03fcbc9.jpg"           width="240" height="180" data-car></div>
+           
+      <div class="car-offer-title">
+        <p>Cadillac Escalade</p>
+        <p>From € 237per day</p>
+      </div>
+  </div>
+</div>
 </section>
 
      <section class="hourly special-wrapper">
        <div class="Hourly-content">
-      <div class="hourly-title">
+      <div class="hourly-title" id="hourly-title">
         <h3>Get up to 40% off</h3>
         <p>Rent hourly and save with limited time offers</p>
       </div>
@@ -428,47 +529,27 @@
         </a>
         </div>
       </div>
-      <ul class="hourly-list">
-        <li class="hourly-list-item">
-          <a href="#">
-           <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/red_rolls-royce-spectre_2024_5944_main_81bfe020922574fc143faf956dc4374e.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/red_rolls-royce-spectre_2024_5944_main_81bfe020922574fc143faf956dc4374e.jpg 2x"  title="Hiring Rolls Royce Spectre (Red), 2024 in Dubai" alt="Rolls Royce Spectre (Red), 2024 for rent in Dubai" loading="lazy" class="slider-img">
-           <div class="car-offer-title">
-            <p>Rolls Royce Spectre</p>
-            <p>€ 80 per hour</p>
-          </div>
-          </a>
-        </li>
-         <li class="hourly-list-item">
-          <a href="#">
-            <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/yellow_ferrari-f-tributo-spyder_2022_4983_main_4ba5a5fdff1d65225d549a605a81f87c.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/yellow_ferrari-f-tributo-spyder_2022_4983_main_4ba5a5fdff1d65225d549a605a81f87c.jpg 2x"  title="Hiring Ferrari F8 Tributo Spyder (Yellow), 2022 in Dubai" alt="Ferrari F8 Tributo Spyder (Yellow), 2022 for rent in Dubai" loading="lazy" class="slider-img">
-            <div class="car-offer-title">
-            <p>Ferrari F8 Tributo Spyder</p>
-            <p>€ 119 per hour</p>
-          </div>
-          </a>
-        </li>
-         <li class="hourly-list-item">
-          <a href="#">
-           <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/green_lamborghini-huracan-sto_2023_5143_main_87656e6c83c369d793dfa9f0eb16149f.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/green_lamborghini-huracan-sto_2023_5143_main_87656e6c83c369d793dfa9f0eb16149f.jpg 2x"  title="Hiring Lamborghini Huracan STO (Green), 2023 in Dubai" alt="Lamborghini Huracan STO (Green), 2023 for rent in Dubai" loading="lazy" class="slider-img">
-           <div class="car-offer-title">
-            <p>Lamborghini Huracan STO</p>
-            <p>€ 130 per hour</p>
-          </div>
-          </a>
-        </li>
-         <li class="hourly-list-item">
-          <a href="#">
-            <img src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg" srcset="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg 2x"  title="Hiring Mercedes SL63 AMG (Grey), 2022 in Dubai" alt="Mercedes SL63 AMG (Grey), 2022 for rent in Dubai" loading="lazy" class="mask-image">
+
+      <div class="slider">
+         <img src="images/img/slider-cars/Lambo.jpg"   alt="Lambo" loading="lazy" class="slider-img">
+           <img src="images/img/slider-cars/Brabus.jpg" alt="Brabus" loading="lazy" class="slider-img">
+            <img src="images/img/slider-cars/porcshe.jpg" loading="lazy" class="slider-img" alt="porcshe">
+            <img src="images/img/slider-cars/toaureg.png" loading="lazy" class="slider-img" alt="Volkswagen">
+            <img src="images/img/slider-cars/3.jpg" loading="lazy" class="slider-img" alt="bugatti">
+           <img src="images/img/slider-cars/brabus l.jpg" loading="lazy" class="slider-img" alt="brabus">
+         <img src="images/img/slider-cars/rsq8.jpg" loading="lazy" class="slider-img" alt="Audi">
+            <img src="images/img/slider-cars/m4.jpg" loading="lazy" class="slider-img" alt="BMW">
             <div class="car-offer-title" class="slider-img">
-            <p>MMercedes SL63 AMG</p>
-            <p>€ 90 per hour</p>
+          
+            <div>
+              <img  class="prev controlls" src="images/img/left.png" alt="">
+            </div>
+              <div>
+              <img  class="next controlls" src="images/img/right.png" alt="">
+            </div>
+            </div>
+
           </div>
-          </a>
-        </li>
-        
-        <div class="click-left prev"><i class="fa-solid fa-arrow-left"></i></div>
-      <div class="click-right next"><i class="fa-solid fa-arrow-right"></i></div>
-      </ul>
      
     </div>
     </section> 
@@ -749,11 +830,11 @@ What occurs if I unintentionally commit a traffic offense?</li>
                <li class="footer__header-item"><a href="#" class="footer__header-link">Contact us</a></li>
           </ul>
           <ul class="footer__header-list">
-            <li class="footer__header-item"><a href="" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/youtube.svg" alt="Car rental video - Renty YouTube channel" title="Car rental video - Renty YouTube channel"></a></li>
-            <li class="footer__header-item"><a href="" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/instagram.svg" title="Hundreds and thousands of pictures of cars in Dubai" alt="Hundreds and thousands of pictures of cars in Dubai"></a></li>
-            <li class="footer__header-item"><a href="" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/facebook.svg" title="Visit our Facebook Page, check out our posts and maybe click all the Like buttons." alt="Visit our Facebook Page, check out our posts and maybe click all the Like buttons."></a></li>
-            <li class="footer__header-item"><a href="" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/linkedin.svg" title="Connect with Dubai's Car Rental Industry on our LinkedIn Page" alt="Connect with Dubai's Car Rental Industry on our LinkedIn Page"></a></li>
-            <li class="footer__header-item"><a href="" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/google-maps-pin.svg" alt="Find us on Google Maps in Al Quoz, Dubai." title="Find us on Google Maps in Al Quoz, Dubai."></a></li>
+            <li class="footer__header-item"><a href="https://www.youtube.com/@renty_ae" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/youtube.svg" alt="Car rental video - Renty YouTube channel" title="Car rental video - Renty YouTube channel"></a></li>
+            <li class="footer__header-item"><a href="https://www.instagram.com/renty.ae/" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/instagram.svg" title="Hundreds and thousands of pictures of cars in Dubai" alt="Hundreds and thousands of pictures of cars in Dubai"></a></li>
+            <li class="footer__header-item"><a href="https://www.facebook.com/carrenty/" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/facebook.svg" title="Visit our Facebook Page, check out our posts and maybe click all the Like buttons." alt="Visit our Facebook Page, check out our posts and maybe click all the Like buttons."></a></li>
+            <li class="footer__header-item"><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHZYh8NnPT39QAAAZKcDo_ILF888Ege6m-W32a1SGUFh7sLp5L4XaBbTBleB-UucqRRL9DBiCyAx6ihtPtc8XSeskL5W6FAwVMCS9DFgbDefAQfBB-2ADlHJ-QbXh-ynSrsvjM=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Frenty-ae%2F" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/linkedin.svg" title="Connect with Dubai's Car Rental Industry on our LinkedIn Page" alt="Connect with Dubai's Car Rental Industry on our LinkedIn Page"></a></li>
+            <li class="footer__header-item"><a href="https://www.google.com/maps/place/Renty+-+Rent+Luxury+Car+in+Dubai/@25.1608085,55.2372231,17z/data=!4m8!3m7!1s0x3e5f6985ae4b1d7d:0x1fea6bf21aa114ba!8m2!3d25.1608085!4d55.2372231!9m1!1b1!16s%2Fg%2F11h4cqq5n4?hl=en" class="footer__header-link"><img loading="lazy" src="https://renty.ae/assets-nd/icons/footer/google-maps-pin.svg" alt="Find us on Google Maps in Al Quoz, Dubai." title="Find us on Google Maps in Al Quoz, Dubai."></a></li>
           </ul>
         </div>
         <div class="footer__body">
@@ -804,18 +885,18 @@ What occurs if I unintentionally commit a traffic offense?</li>
           <div class="footer__support">
           <span>Inquiries & Support</span>
           
-            <a class="tel" href="tel:+971 50 461 7277">+971 50 461 7277</a><br>
-             <a class="Whatsapp"href="#">Whatsapp</a><br>
-              <a class="Telegram" href="#">Telegram</a>
+            <a class="tel" href="tel:+123456789">+123456789</a><br>
+             <a class="Whatsapp"href="https://api.whatsapp.com/send/?phone=971558569266">Whatsapp</a><br>
+              <a class="Telegram" href="https://t.me/Renty_official">Telegram</a>
                <div class="footer__partnership">
             <span>For partnership</span><br>
-            <a class="Message" href="#">Send Message</a>
+            <a class="Message" href="mailto:example.mail">Send Message</a>
           </div>
           </div>
          
           <div class="footer__address">
             <span>ADDRESS</span>
-            <a href="#">Warehouse 4, 5th Street, Al Quoz, Al Quoz 3, Dubai</a><br>
+            <a href="https://www.google.com/search?q=Warehouse+4%2C+5th+Street%2C+Al+Quoz%2C+Al+Quoz+3%2C+Dubai&oq=Warehouse+4%2C+5th+Street%2C+Al+Quoz%2C+Al+Quoz+3%2C+Dubai&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBNIBBzMwOGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#rlimm=8932519133693357996">Warehouse 4, 5th Street, Al Quoz, Al Quoz 3, Dubai</a><br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.256708115327!2d55.2372231!3d25.160808499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6985ae4b1d7d%3A0x1fea6bf21aa114ba!2sRenty%20-%20Rent%20Luxury%20Car%20in%20Dubai!5e0!3m2!1sen!2sua!4v1727015520007!5m2!1sen!2sua" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
