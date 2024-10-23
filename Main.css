@@ -269,8 +269,18 @@ a {
 
 .group {
   display: flex;
+  
   position: relative;
 }
+
+.header-language {
+  max-width: 116px;
+}
+
+.header-currency {
+  max-width: 70px;
+}
+.header-person-image {}
 
 #language-menu {
   position: absolute;
