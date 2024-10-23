@@ -1,5 +1,8 @@
 const language = document.querySelector('#language')
 const languageMenu = document.querySelector('#language-menu')
+const languageItems = languageMenu.getElementsByTagName('li')
+
+
 
 language.addEventListener('click', () => {
 	if (languageMenu.classList.contains('display') == true) {
@@ -9,8 +12,25 @@ language.addEventListener('click', () => {
 	}
 })
 
+  Array.from(languageItems).forEach(item => {
+		item.addEventListener('click', () => {
+			language.innerHTML = `<i class="fa-solid fa-globe"></i> ${item.textContent} &blacktriangledown;`
+			languageMenu.classList.add('display') 
+		})
+	})
+
+
+
 const currency = document.querySelector('#currency')
 const currencyMenu = document.querySelector('#currency-menu')
+const currencyItems = currencyMenu.getElementsByTagName('li')
+
+	Array.from(currencyItems).forEach(item => {
+		item.addEventListener('click', () => {
+			currency.innerHTML = `${item.textContent} &blacktriangledown;`
+			currencyMenu.classList.add('display');
+		})
+	})
 
 currency.addEventListener('click', () => {
 	if (currencyMenu.classList.contains('display') == true) {
@@ -33,6 +53,16 @@ headerPerson.addEventListener('click', () => {
 
 const headerLocation = document.querySelector('#location')
 const locationList = document.querySelector('#location-list')
+const locationItems = locationList.getElementsByTagName('li')
+
+Array.from(locationItems).forEach(item => {
+	item.addEventListener('click', () => {
+	headerLocation.innerHTML = `${item.innerHTML} &blacktriangledown;`;
+		locationList.classList.add('display')
+	})
+
+})
+
 
 headerLocation.addEventListener('click', () => {
 	if (locationList.classList.contains('display') == true) {
@@ -53,6 +83,8 @@ burger.addEventListener('click', () => {
 		burgerMenu.classList.add('display')
 	}
 })
+
+
 
 
 const dialog = document.querySelector('[data-dialog], [data-dialog-yacht]');
