@@ -171,3 +171,9 @@ controls.forEach(control => {
 
 show(imageIndex)
 
+const googleMap = document.querySelector('.google__map');
+const googleOverlay = document.querySelector('.google__map-overlay');
+
+googleMap.addEventListener('click', () => {
+	googleOverlay.classList.add('hide')
+})
