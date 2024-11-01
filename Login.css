@@ -13,8 +13,6 @@ body {
 
 }
 
-
-
 h2, a{
   text-transform: uppercase;
 }
@@ -81,10 +79,13 @@ a {
 }
 
 input:focus {
-  outline: none;
+  outline: solid lightblue;
+  border-radius: 20px;
 }
 
 button:focus {
   border: 1px solid black;
 }
+
+
 
