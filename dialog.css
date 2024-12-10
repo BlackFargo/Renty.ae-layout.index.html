@@ -37,6 +37,7 @@ dialog img {
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.8); 
+	backdrop-filter: blur(5px);
 }
 
 .dialog__container-title {
@@ -148,3 +149,32 @@ dialog img {
   margin-right: 5px;
 }
 
+dialog,#language-menu,#currency-menu,#forms,#location-list {
+	animation: fade-in 0.5s ease;
+}
+
+
+
+dialog.closing {
+	animation: fadeOut 0.5s ease;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+
+	}
+	to {
+		opacity: 1;
+
+	}
+}
+
+@keyframes fadeOut {
+		from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
